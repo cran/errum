@@ -5,9 +5,11 @@
 
 <!-- badges: start -->
 
-[![Build
-Status](https://travis-ci.org/tmsalab/errum.svg)](https://travis-ci.org/tmsalab/errum)
+[![R build
+status](https://github.com/tmsalab/errum/workflows/R-CMD-check/badge.svg)](https://github.com/tmsalab/errum/actions)
 [![Package-License](http://img.shields.io/badge/license-GPL%20\(%3E=2\)-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-2.0.html)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/errum)](https://CRAN.R-project.org/package=errum)
 <!-- badges: end -->
 
 Perform a Bayesian estimation of the Exploratory reduced Reparameterized
@@ -24,8 +26,8 @@ install.packages("errum")
 Or, you can be on the cutting-edge development version on GitHub using:
 
 ``` r
-if(!requireNamespace("devtools")) install.packages("devtools")
-devtools::install_github("tmsalab/errum")
+if(!requireNamespace("remotes")) install.packages("remotes")
+remotes::install_github("tmsalab/errum")
 ```
 
 ### Usage
@@ -39,14 +41,14 @@ library("errum")
 From there, the errum model can be estimated using:
 
 ``` r
-errum_model = errum(<data>, chain_length = 10000)
+errum_model = errum(<data>, <k>, chain_length = 10000)
 ```
 
 ### Authors
 
 James Joseph Balamuta, Steven Andrew Culpepper, and Jeffrey A. Douglas
 
-### Citing the `errum` package
+### Citing the errum package
 
 To ensure future development of the package, please cite `errum` package
 if used during an analysis or simulation studies. Citation information
